@@ -1,8 +1,8 @@
 package entities;
 
 public class Node<T> implements Cloneable {
-    public Node left;
-    public Node right;
+    public Node<T> left;
+    public Node<T> right;
     public T value;
 
     public Node(T value) {

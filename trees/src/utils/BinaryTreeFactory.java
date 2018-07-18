@@ -1,10 +1,11 @@
 package utils;
 
+import entities.BinaryTree;
 import entities.Node;
 
 public class BinaryTreeFactory {
 
-    public static Node<Integer> getSampleTree1() {
+    public static Node<Integer> getSampleTreeRoot1() {
         Node<Integer> root = new Node<Integer>(2);
         Node<Integer> n11 = new Node<Integer>(7);
         Node<Integer> n12 = new Node<Integer>(5);
@@ -39,5 +40,30 @@ public class BinaryTreeFactory {
         n24.right = n38;
 
         return root;
+    }
+
+    public static BinaryTree<Integer> getTree1() {
+        BinaryTree<Integer> binTree = new BinaryTree<>(null);
+
+        binTree.addElement(6);
+        binTree.addElement(2);
+        binTree.addElement(5);
+        binTree.addElement(7);
+        binTree.addElement(56);
+        binTree.addElement(23);
+        binTree.addElement(28);
+        binTree.addElement(99);
+        binTree.addElement(12);
+        binTree.addElement(77);
+        binTree.addElement(87);
+        binTree.addElement(78);
+        binTree.addElement(90);
+        binTree.addElement(00);
+        binTree.addElement(11);
+        binTree.addElement(22);
+        binTree.addElement(20);
+
+        return binTree;
+
     }
 }

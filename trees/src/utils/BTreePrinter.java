@@ -85,12 +85,15 @@ public class BTreePrinter {
     }
 
     private static <T> boolean isAllElementsNull(List<T> list) {
-        for (Object object : list) {
-            if (object != null)
-                return false;
-        }
+//        for (Object object : list) {
+//            if (object != null)
+//                return false;
+//        }
 
-        return true;
+        return list.stream().allMatch(element -> element == null);
+
+
+        // return true;
     }
 
 }
